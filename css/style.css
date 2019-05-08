@@ -493,7 +493,7 @@ body.loaded .ms_loader {
 	font-size: 14px;
 }
 
-.ms_nav_wrapper ul li a:after {
+/* .ms_nav_wrapper ul li a:after {
 	position: absolute;
 	height: 2px;
 	background-color: #ededed;
@@ -505,7 +505,7 @@ body.loaded .ms_loader {
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
-}
+} */
 
 .ms_nav_wrapper ul li:last-child a:after {
 	display: none;
@@ -1464,6 +1464,7 @@ ul.more_option li a:hover .opt_icon .icon_share {
 }
 
 .ms_divider {
+	display: none;
 	float: left;
 	width: 100%;
 	border: 0;
@@ -5262,6 +5263,7 @@ h2.widget-title:after {
 		max-width: 111px;
 	}
 	.weekly_left span.w_top_no {
+		display: none;
 		font-size: 40px;
 	}
 	.w_top_song {
