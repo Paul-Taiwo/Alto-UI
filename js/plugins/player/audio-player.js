@@ -113,6 +113,7 @@ $(function() {
         $("#jquery_jplayer_1").on($.jPlayer.event.ready + ' ' + $.jPlayer.event.play, function(event) {
             var current = myPlaylist.current;
             var playlist = myPlaylist.playlist;
+
             $.each(playlist, function(index, obj) {
                 if (index == current) {
                     $(".jp-now-playing").html("<div class='jp-track-name'><span class='que_img'><img src='"+obj.image+"'></span><div class='que_data'>" + obj.title + " <div class='jp-artist-name'>" + obj.artist + "</div></div></div>");
@@ -120,10 +121,10 @@ $(function() {
             });
             $('.ms_weekly_box').on('click', function (e) {
                 e.preventDefault();
-                console.log(e.target.text);
+                var clicked = this.children[0].children[1].children[1].children[0].innerText;
                 var index = playlist.map(function (obj) {
                     return obj.title;
-                }).indexOf(e.target.text);
+                }).indexOf(clicked);
                 myPlaylist.play(index);
 
             });
@@ -162,10 +163,6 @@ $(function() {
 				} else { var angle = 0; }
 				return (angle < 0) ? angle + 360 : angle;
 			}
-
-
-
-
 
             var timeDrag = false;
             $('.jp-play-bar').mousedown(function(e) {
