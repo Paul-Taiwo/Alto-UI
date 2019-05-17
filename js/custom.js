@@ -403,6 +403,9 @@ Assigned to: Theme Forest
     $(document).ready(function() {
         music.init();
 
+        $(".swiper-slide").css("width", "200px");
+        $(".swiper-slide").css("marginLeft", "20px");
+
 		// Scrollbar
 		$(".ms_nav_wrapper").mCustomScrollbar({
 			theme:"minimal"

@@ -5628,7 +5628,7 @@ h2.widget-title:after {
 		margin: 40px 0px 0px 0px;
 	}
 	.ms_fea_album_slider {
-		margin: 52px 0px 0px 0px;
+		margin: 52px 0px 70px 0px;
 	}
 	.ms_footer_wrapper {
 		padding-left: 26px;
@@ -6266,6 +6266,9 @@ h2.widget-title:after {
 }
 
 @media(max-width:768px) {
+	.ms_genres_wrapper {
+		display: none;
+	}
 	.jp-toggles.flex-item button {
 		margin: 5px 6px 0px 6px;
 	}
@@ -6289,6 +6292,9 @@ h2.widget-title:after {
 @media(max-width:500px) {
 	.ms_banner_text .ms_banner_btn {
 		padding-top: 30%;
+	}
+	.ms_genres_box {
+		height: 126px;
 	}
 }
 
@@ -7134,7 +7140,7 @@ h2.widget-title:after {
 		padding-right: 0px;
 	}
 	.ms_genres_wrapper, .ms_radio_wrapper {
-		margin: 55px 10px 0px 10px;
+		margin: 55px 10px 37px 10px;
 	}
 	.ms_footer_logo {
 		padding-left: 0px;
