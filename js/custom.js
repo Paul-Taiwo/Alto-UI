@@ -1,14 +1,14 @@
 /*--------------------- Copyright (c) 2018 -----------------------
 [Master Javascript]
 Project: Miraculous - Online Music Store Html Template
-Version: 1.0.0
+Version: 2.0.0
 Assigned to: Theme Forest
 -------------------------------------------------------------------*/
 (function($) {
     "use strict";
     var music = {
         initialised: false,
-        version: 1.0,
+        version: 2.0,
         mobile: false,
         init: function() {
             if (!this.initialised) {
@@ -89,29 +89,29 @@ Assigned to: Theme Forest
                 },
                 breakpoints: {
                     1800: {
-                        slidesPerView: 4,
+                        slidesPerView: 7,
                     },
                     1400: {
-                        slidesPerView: 4,
+                        slidesPerView: 7,
                     },
                     992: {
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                         spaceBetween: 10,
                     },
                     768: {
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                         spaceBetween: 10,
                     },
                     640: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                         spaceBetween: 15,
                     },
                     480: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                     },
                     375: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
+                        slidesPerView: 2,
+                        spaceBetween: 4,
                     }
                 },
             });
@@ -127,29 +127,29 @@ Assigned to: Theme Forest
                 },
                 breakpoints: {
                     1800: {
-                        slidesPerView: 4,
+                        slidesPerView: 7,
                     },
                     1400: {
-                        slidesPerView: 4,
+                        slidesPerView: 7,
                     },
                     992: {
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                         spaceBetween: 10,
                     },
                     768: {
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                         spaceBetween: 10,
                     },
                     640: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                         spaceBetween: 15,
                     },
                     480: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                     },
                     375: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
+                        slidesPerView: 2,
+                        spaceBetween: 4,
                     }
                 },
             });
@@ -165,35 +165,35 @@ Assigned to: Theme Forest
                 },
                 breakpoints: {
                     1800: {
-                        slidesPerView: 4,
+                        slidesPerView: 7,
                     },
                     1400: {
-                        slidesPerView: 4,
+                        slidesPerView: 7,
                     },
                     992: {
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                         spaceBetween: 10,
                     },
                     768: {
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                         spaceBetween: 10,
                     },
                     640: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                         spaceBetween: 15,
                     },
                     480: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                     },
                     375: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
+                        slidesPerView: 2,
+                        spaceBetween: 4,
                     }
                 },
             });
             // New released Slider
             var swiper = new Swiper('.ms_release_slider.swiper-container', {
-                slidesPerView: 4,
+                slidesPerView: 7,
                 spaceBetween: 30,
                 speed: 1500,
                 loop: true,
@@ -203,29 +203,29 @@ Assigned to: Theme Forest
                 },
                 breakpoints: {
                     1800: {
-                        slidesPerView: 4,
+                        slidesPerView: 7,
                     },
                     1400: {
                         slidesPerView: 3,
                     },
                     992: {
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                         spaceBetween: 10,
                     },
                     768: {
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                         spaceBetween: 10,
                     },
                     640: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                         spaceBetween: 15,
                     },
                     480: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                     },
                     375: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
+                        slidesPerView: 2,
+                        spaceBetween: 4,
                     }
                 },
             });
@@ -241,29 +241,29 @@ Assigned to: Theme Forest
                 },
                 breakpoints: {
                     1800: {
-                        slidesPerView: 4,
+                        slidesPerView: 7,
                     },
                     1400: {
-                        slidesPerView: 4,
+                        slidesPerView: 7,
                     },
                     992: {
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                         spaceBetween: 10,
                     },
                     768: {
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                         spaceBetween: 10,
                     },
                     640: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                         spaceBetween: 15,
                     },
                     480: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                     },
                     375: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
+                        slidesPerView: 2,
+                        spaceBetween: 4,
                     }
                 },
             });
@@ -279,37 +279,37 @@ Assigned to: Theme Forest
                 },
                 breakpoints: {
                     1800: {
-                        slidesPerView: 4,
+                        slidesPerView: 7,
                     },
                     1400: {
-                        slidesPerView: 4,
+                        slidesPerView: 7,
                     },
                     992: {
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                         spaceBetween: 10,
                     },
                     768: {
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                         spaceBetween: 10,
                     },
                     640: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                         spaceBetween: 15,
                     },
                     480: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                     },
                     375: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
+                        slidesPerView: 2,
+                        spaceBetween: 4,
                     }
                 },
             });
             // Testimonial Slider
             var swiper = new Swiper('.ms_test_slider.swiper-container', {
-                slidesPerView: 4,
+                slidesPerView: 7,
                 spaceBetween: 30,
-                slidesPerColumn: 1,
+                slidesPerColumn: 2,
                 loop: false,
                 speed: 1500,
                 navigation: {
@@ -321,10 +321,10 @@ Assigned to: Theme Forest
                         slidesPerView: 3,
                     },
                     992: {
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                     },
                     767: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                     },
                 },
             });
@@ -403,8 +403,8 @@ Assigned to: Theme Forest
     $(document).ready(function() {
         music.init();
 
-        $(".swiper-slide").css("width", "200px");
-        $(".swiper-slide").css("marginLeft", "20px");
+        // $(".swiper-slide").css("width", "200px");
+        // $(".swiper-slide").css("marginLeft", "20px");
 
 		// Scrollbar
 		$(".ms_nav_wrapper").mCustomScrollbar({
