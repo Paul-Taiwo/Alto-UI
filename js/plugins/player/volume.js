@@ -2,20 +2,19 @@
 Rotative knob, as used in Open Stage Control 
 https://github.com/jean-emmanuel/Open-Stage-Control
 (copyleft © jean-emmanuel // GNU/GPL3)
-
 This is just just a sample showing the knob widget. It's meant to be used in a chrome based application, hence compatibility issues were not taken into account.
 */
 
 
-(function($) {
-    
-        $.event.special.drag = {
-        setup: function() {
+(function ($) {
+
+    $.event.special.drag = {
+        setup: function () {
             var element = $(this),
                 previousEvent = null,
                 $document = $(document)
 
-            var mousemove = function(e) {
+            var mousemove = function (e) {
                 e.pageX = e.pageX || e.layerX
                 e.pageY = e.pageY || e.layerY
                 e.speedX = e.pageX - previousEvent.pageX
@@ -24,15 +23,15 @@ This is just just a sample showing the knob widget. It's meant to be used in a c
                 e.deltaY = e.speedY + previousEvent.deltaY
 
 
-                element.trigger("drag",e)
+                element.trigger("drag", e)
                 previousEvent = e
             }
-            var mouseup = function(e) {
+            var mouseup = function (e) {
                 $document.off("mouseup")
                 $document.off("mousemove")
 
-                e.pageX = e.pageX || e.layerX 
-                e.pageY = e.pageY || e.layerY 
+                e.pageX = e.pageX || e.layerX
+                e.pageY = e.pageY || e.layerY
                 e.speedX = e.pageX - previousEvent.pageX
                 e.speedY = e.pageY - previousEvent.pageY
                 e.deltaX = e.deltaX + previousEvent.deltaX
@@ -40,11 +39,11 @@ This is just just a sample showing the knob widget. It's meant to be used in a c
 
                 element.trigger("dragend", e)
             }
-            var touchend = function(e) {
+            var touchend = function (e) {
                 e.preventDefault()
 
-                e.offsetX = e.pageX-getOffset(e.target).left
-                e.offsetY = e.pageY-getOffset(e.target).top
+                e.offsetX = e.pageX - getOffset(e.target).left
+                e.offsetY = e.pageY - getOffset(e.target).top
                 e.speedX = e.pageX - previousEvent.pageX
                 e.speedY = e.pageY - previousEvent.pageY
                 e.deltaX = e.deltaX + previousEvent.deltaX
@@ -63,12 +62,15 @@ This is just just a sample showing the knob widget. It's meant to be used in a c
                     if (!isNaN(obj.offsetTop)) {
                         offsetTop += obj.offsetTop;
                     }
-                } while(obj = obj.offsetParent );
+                } while (obj = obj.offsetParent);
 
-                return {left: offsetLeft, top: offsetTop};
+                return {
+                    left: offsetLeft,
+                    top: offsetTop
+                };
             }
 
-            element.on("touchstart.drag mousedown.drag", function(e) {
+            element.on("touchstart.drag mousedown.drag", function (e) {
                 e.preventDefault()
 
                 if (!e.originalEvent.changedTouches) {
@@ -76,10 +78,10 @@ This is just just a sample showing the knob widget. It's meant to be used in a c
                     $document.on("mousemove", mousemove)
                     $document.on("mouseup", mouseup)
                 }
-                e.pageX = e.pageX || e.layerX ||  e.originalEvent.changedTouches[0].pageX
-                e.pageY = e.pageY || e.layerY ||  e.originalEvent.changedTouches[0].pageY
-                e.offsetX = e.offsetX || e.pageX-getOffset(e.target).left
-                e.offsetY = e.offsetY || e.pageY-getOffset(e.target).top
+                e.pageX = e.pageX || e.layerX || e.originalEvent.changedTouches[0].pageX
+                e.pageY = e.pageY || e.layerY || e.originalEvent.changedTouches[0].pageY
+                e.offsetX = e.offsetX || e.pageX - getOffset(e.target).left
+                e.offsetY = e.offsetY || e.pageY - getOffset(e.target).top
 
 
                 e.speedX = 0
@@ -90,13 +92,13 @@ This is just just a sample showing the knob widget. It's meant to be used in a c
                 element.trigger("draginit", e)
                 previousEvent = e
             })
-            element.on("touchmove.drag", function(e) {
+            element.on("touchmove.drag", function (e) {
                 e.preventDefault()
 
-                e.pageX = e.pageX || e.layerX ||  e.originalEvent.changedTouches[0].pageX
-                e.pageY = e.pageY || e.layerY ||  e.originalEvent.changedTouches[0].pageY
-                e.offsetX = e.pageX-getOffset(e.target).left
-                e.offsetY = e.pageY-getOffset(e.target).top
+                e.pageX = e.pageX || e.layerX || e.originalEvent.changedTouches[0].pageX
+                e.pageY = e.pageY || e.layerY || e.originalEvent.changedTouches[0].pageY
+                e.offsetX = e.pageX - getOffset(e.target).left
+                e.offsetY = e.pageY - getOffset(e.target).top
                 e.speedX = e.pageX - previousEvent.pageX
                 e.speedY = e.pageY - previousEvent.pageY
                 e.deltaX = e.speedX + previousEvent.deltaX
@@ -105,7 +107,7 @@ This is just just a sample showing the knob widget. It's meant to be used in a c
                 // do now allow two touch points to drag the same element
                 if (e.originalEvent.targetTouches.length > 1) return
 
-                element.trigger("drag",e)
+                element.trigger("drag", e)
                 previousEvent = e
 
             })
@@ -114,7 +116,7 @@ This is just just a sample showing the knob widget. It's meant to be used in a c
 
 
         },
-        teardown: function() {
+        teardown: function () {
             var element = $(this)
             element.off("touchstart.drag")
             element.off("touchmove.drag")
@@ -125,7 +127,7 @@ This is just just a sample showing the knob widget. It's meant to be used in a c
         }
     }
 
-    init = function(){
+    init = function () {
 
         var widget = $('.widget'),
             wrapper = widget.find('.knob-wrapper'),
@@ -144,7 +146,7 @@ This is just just a sample showing the knob widget. It's meant to be used in a c
             offX = 0,
             offY = 0;
 
-        wrapper.on('draginit', function(e, data) {
+        wrapper.on('draginit', function (e, data) {
 
             var w = data.target.clientWidth,
                 h = data.target.clientHeight,
@@ -180,7 +182,7 @@ This is just just a sample showing the knob widget. It's meant to be used in a c
             offR = knob.rotation
         })
 
-        wrapper.on('drag', function(e, data) {
+        wrapper.on('drag', function (e, data) {
 
 
             var w = data.target.clientWidth,
@@ -211,11 +213,11 @@ This is just just a sample showing the knob widget. It's meant to be used in a c
 
         })
 
-        widget.getValue = function() {
+        widget.getValue = function () {
             return mapToScale(knob.rotation, [0, 270], [range.min, range.max])
         }
 
-        widget.setValue = function(v, send, sync) {
+        widget.setValue = function (v, send, sync) {
             var r = mapToScale(v, [range.min, range.max], [0, 270])
             knob.rotation = r
 
@@ -235,15 +237,15 @@ This is just just a sample showing the knob widget. It's meant to be used in a c
 
             if (sync) widget.trigger('sync')
         }
-        widget.showValue = function(v) {
+        widget.showValue = function (v) {
             input.val(v)
         }
 
-        input.change(function() {
+        input.change(function () {
             widget.setValue(input.val(), true, true)
         })
 
-        clip = function(value, range) {
+        clip = function (value, range) {
             var max = Math.max,
                 min = Math.min,
                 value = parseFloat(value)
@@ -254,7 +256,7 @@ This is just just a sample showing the knob widget. It's meant to be used in a c
         }
 
         // map a value from a scale to another input and output must be range arrays
-        mapToScale = function(value, rangeIn, rangeOut, reverse) {
+        mapToScale = function (value, rangeIn, rangeOut, reverse) {
 
             var max = Math.max,
                 min = Math.min,
@@ -272,8 +274,8 @@ This is just just a sample showing the knob widget. It's meant to be used in a c
             return value
 
         }
-    
+
     }
-    
+
     init()
 })(jQuery)

@@ -1,6 +1,6 @@
 /*--------------------- Copyright (c) 2018 -----------------------
 [Master Javascript]
-Project: Miraculous - Online Music Store Html Template
+Project: ALTO - High Fidelity Music Streaming
 Version: 2.0.0
 Assigned to: Theme Forest
 -------------------------------------------------------------------*/
@@ -203,7 +203,7 @@ Assigned to: Theme Forest
                 },
                 breakpoints: {
                     1800: {
-                        slidesPerView: 7,
+                        slidesPerView: 3,
                     },
                     1400: {
                         slidesPerView: 3,
