@@ -6188,198 +6188,6 @@ textarea.success {
   }
 }
 
-/* .alto-carousel-wrapper {
-  	overflow: hidden;
-  	min-width: 100%
-  }
-
-  @media (max-width:991px) {
-  	.alto-carousel-wrapper.nowrap-fill {
-  		padding-left: 0;
-  		padding-right: 0
-  	}
-
-  	.alto-carousel-wrapper.nowrap-fill.padding-fill {
-  		margin-left: -1.5rem;
-  		margin-right: -1.5rem
-  	}
-  }
-
-  .alto-carousel {
-  	-ms-overflow-style: none;
-  	overflow: -moz-scrollbars-none
-  }
-
-  .alto-carousel::-webkit-scrollbar {
-  	display: none
-  }
-
-  .alto-carousel:focus,
-  .alto-carousel:hover {
-  	will-change: scroll-position
-  }
-
-  .alto-carousel:focus {
-  	outline: 0
-  }
-
-  .alto-carousel [tabindex="-1"] {
-  	outline: none
-  }
-
-  @supports (-moz-appearance:none) {
-  	.alto-carousel {
-  		overflow: hidden
-  	}
-  }
-
-  @supports (scrollbar-width:none) {
-  	.alto-carousel {
-  		overflow-x: auto;
-  		scrollbar-width: none
-  	}
-  }
-
-  .nowrap-fill.padding-fill .alto-carousel {
-  	padding: 1.5rem
-  }
-
-  @media (min-width:576px) and (max-width:767px) {
-  	.nowrap-fill.padding-fill .alto-carousel {
-  		padding: 1.5rem 3rem
-  	}
-  }
-
-  .nowrap-fill.padding-fill .alto-carousel:after {
-  	flex: 0 0 auto;
-  	height: 1px;
-  	width: 1.5rem
-  }
-
-  @media (min-width:576px) and (max-width:767px) {
-  	.nowrap-fill.padding-fill .alto-carousel:after {
-  		width: 3rem
-  	}
-  }
-
-  @media (max-width:991px) {
-  	.nowrap-fill .alto-carousel {
-  		padding-left: 1.5rem;
-  		padding-right: 1.5rem
-  	}
-  }
-
-  @media (max-width:991px) and (min-width:576px) {
-  	.nowrap-fill .alto-carousel {
-  		padding-left: 3rem;
-  		padding-right: 3rem
-  	}
-  }
-
-  @media (max-width:991px) {
-  	.nowrap-fill .alto-carousel:after {
-  		flex: 0 0 auto;
-  		height: 1px;
-  		width: 1.5rem
-  	}
-  }
-
-  @media (max-width:991px) and (min-width:576px) {
-  	.nowrap-fill .alto-carousel:after {
-  		width: 3rem
-  	}
-  }
-
-  .alto-carousel-animate {
-  	transition: -webkit-transform .5s cubic-bezier(.39, .575, .565, 1);
-  	transition: transform .5s cubic-bezier(.39, .575, .565, 1);
-  	transition: transform .5s cubic-bezier(.39, .575, .565, 1), -webkit-transform .5s cubic-bezier(.39, .575, .565, 1)
-  }
-
-  .alto-carousel-control {
-  	position: absolute;
-  	top: 0;
-  	bottom: 0;
-  	z-index: 2;
-  	color: #fff;
-  	outline: 0;
-  	width: 60px;
-  	opacity: .6;
-  	transition: opacity .25s cubic-bezier(.39, .575, .565, 1), -webkit-transform .25s cubic-bezier(.39, .575, .565, 1);
-  	transition: opacity .25s cubic-bezier(.39, .575, .565, 1), transform .25s cubic-bezier(.39, .575, .565, 1);
-  	transition: opacity .25s cubic-bezier(.39, .575, .565, 1), transform .25s cubic-bezier(.39, .575, .565, 1), -webkit-transform .25s cubic-bezier(.39, .575, .565, 1)
-  }
-
-  .alto-carousel-control-bg {
-  	opacity: 1;
-  	z-index: 1
-  }
-
-  .alto-carousel-control--next,
-  .alto-carousel-control--prev {
-  	background-color: transparent;
-  	cursor: pointer;
-  	text-align: center
-  }
-
-  .alto-carousel-control--prev,
-  .alto-carousel-control--prev-bg {
-  	left: 0;
-  	-webkit-transform: translateX(-60px);
-  	transform: translateX(-60px)
-  }
-
-  .alto-carousel-control--prev-bg {
-  	background-image: linear-gradient(90deg, rgba(0, 0, 0, .6) 0, rgba(0, 0, 0, .4428) 19%, rgba(0, 0, 0, .3246) 34%, rgba(0, 0, 0, .2292) 47%, rgba(0, 0, 0, .1668) 56.5%, rgba(0, 0, 0, .1164) 65%, rgba(0, 0, 0, .0756) 73%, rgba(0, 0, 0, .045) 80.2%, rgba(0, 0, 0, .0252) 86.1%, rgba(0, 0, 0, .0126) 91%, rgba(0, 0, 0, .0048) 95.2%, rgba(0, 0, 0, .0012) 98.2%, transparent)
-  }
-
-  .alto-carousel-control--next,
-  .alto-carousel-control--next-bg {
-  	right: 0;
-  	-webkit-transform: translateX(60px);
-  	transform: translateX(60px)
-  }
-
-  .alto-carousel-control--next-bg {
-  	background-image: linear-gradient(270deg, rgba(0, 0, 0, .6) 0, rgba(0, 0, 0, .4428) 19%, rgba(0, 0, 0, .3246) 34%, rgba(0, 0, 0, .2292) 47%, rgba(0, 0, 0, .1668) 56.5%, rgba(0, 0, 0, .1164) 65%, rgba(0, 0, 0, .0756) 73%, rgba(0, 0, 0, .045) 80.2%, rgba(0, 0, 0, .0252) 86.1%, rgba(0, 0, 0, .0126) 91%, rgba(0, 0, 0, .0048) 95.2%, rgba(0, 0, 0, .0012) 98.2%, transparent)
-  }
-
-  .alto-carousel-control:focus,
-  .alto-carousel-control:hover {
-  	opacity: 1
-  }
-
-  .touch .alto-carousel-controls {
-  	display: none !important
-  }
-
-  .alto-carousel-control:focus,
-  .alto-carousel-control:focus+.alto-carousel-control-bg,
-  .alto-carousel-control:hover,
-  .alto-carousel-control:hover+.alto-carousel-control-bg,
-  .alto-carousel-wrapper:hover .alto-carousel-control,
-  .alto-carousel:focus .alto-carousel-control {
-  	-webkit-transform: translateX(0);
-  	transform: translateX(0)
-  }
-
-  .alto-carousel-control--prev:disabled,
-  .alto-carousel-control--prev:disabled+.alto-carousel-control-bg {
-  	-webkit-transform: translateX(-60px) !important;
-  	transform: translateX(-60px) !important
-  }
-
-  .alto-carousel-control--next:disabled,
-  .alto-carousel-control--next:disabled+.alto-carousel-control-bg {
-  	-webkit-transform: translateX(60px) !important;
-  	transform: translateX(60px) !important
-  }
-
-  .alto-carousel-wrapper:focus .alto-carousel-controls,
-  .alto-carousel-wrapper:hover .alto-carousel-controls {
-  	display: block
-  } */
-
 .nuxt-progress {
   position: fixed;
   top: 0;
@@ -6391,6 +6199,15 @@ textarea.success {
   transition: width .1s, opacity .4s;
   background-color: #0ff;
   z-index: 999999
+}
+
+.nuxt-link-active {
+  margin: 0;
+  text-decoration: none;
+}
+
+.nuxt-link-active h3 {
+  margin-top: 0.68rem;
 }
 
 .nuxt-progress.nuxt-progress-notransition {

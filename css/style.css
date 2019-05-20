@@ -1065,7 +1065,8 @@ ul.ms_lang_box:after {
 	background: -o-radial-gradient(50% 50%, ellipse closest-side, #ff4865, rgba(255, 42, 112, 0) 60%);
 }
 
-.ms_rcnt_box {
+.ms_rcnt_box,
+.ms_rcnt_box_no {
 	text-align: center;
 }
 
@@ -1169,6 +1170,7 @@ ul.ms_lang_box:after {
 	transition: all 0.2s;
 }
 
+.ms_rcnt_box_no .ms_play_icon, .ms_genres_box .ms_play_icon,
 .ms_rcnt_box .ms_play_icon, .ms_genres_box .ms_play_icon {
 	position: absolute;
 	top: 50%;
@@ -1181,6 +1183,7 @@ ul.ms_lang_box:after {
 	transform: translate(-50%, -50%);
 }
 
+.ms_rcnt_box_no .ms_play_icon:after, .ms_genres_box .ms_play_icon:after,
 .ms_rcnt_box .ms_play_icon:after, .ms_genres_box .ms_play_icon:after {
 	position: absolute;
 	width: 40px;
@@ -1203,6 +1206,7 @@ ul.ms_lang_box:after {
 	opacity: 1;
 }
 
+.ms_rcnt_box_no .ms_play_icon img, .ms_genres_box .ms_play_icon img,
 .ms_rcnt_box .ms_play_icon img, .ms_genres_box .ms_play_icon img {
 	display: inline-block;
 	line-height: 40px;
@@ -1229,6 +1233,11 @@ ul.ms_lang_box:after {
 	top: 0;
 }
 
+.ms_rcnt_box_no:hover .ms_box_overlay {
+	top: unset;
+}
+
+
 .ms_rcnt_box:hover .ms_play_icon img, .ms_genres_box:hover .ms_play_icon img {
 	opacity: 1;
 	-webkit-transform: scale(1);
@@ -1236,6 +1245,10 @@ ul.ms_lang_box:after {
 	-ms-transform: scale(1);
 	-o-transform: scale(1);
 	transform: scale(1);
+}
+
+.ms_rcnt_box_no:hover .ms_play_icon img, .ms_genres_box:hover .ms_play_icon img {
+	opacity: 0;
 }
 
 .ms_more_icon {
@@ -1253,6 +1266,10 @@ ul.ms_lang_box:after {
 	top: 10px;
 }
 
+.ms_rcnt_box_no:hover .ms_more_icon, .ms_genres_box:hover .ms_more_icon {
+	top: 10px;
+}
+
 .ms_main_overlay {
 	opacity: 0;
 	transition: all 0.4s ease-in-out;
@@ -1263,6 +1280,10 @@ ul.ms_lang_box:after {
 
 .ms_rcnt_box:hover .ms_main_overlay {
 	opacity: 1;
+}
+
+.ms_rcnt_box_no:hover .ms_main_overlay {
+	opacity: 0;
 }
 
 ul.more_option {
@@ -1374,6 +1395,18 @@ ul.more_option li a:hover .opt_icon .icon_share {
 	background-position: -573px -33px;
 }
 
+.ms_artist_link {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100px;
+}
+
+.ms_artist_link a {
+	font-size: 12px;
+	color: #fff;
+}
 /*====Weekly Top 15 Music =====*/
 
 /* .ms_weekly_wrapper {
