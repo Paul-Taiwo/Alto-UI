@@ -664,7 +664,7 @@ span.nav_text {
 
 .ms_sidemenu_inner {
 	width: 80px;
-	background-color: #fff;
+	/* background-color: #fff; */
 	height: 100%;
 	z-index: 1;
 }
@@ -708,6 +708,11 @@ span.nav_text {
 
 .ms_sidemenu_wrapper.open_menu {
 	width: 204px;
+	background: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.83)),
+	url("../images/edward-cisneros-411006-unsplash.jpg");
+	height: 100%;
+	background-position: center;
+	background-size: cover;
 }
 
 .ms_logo_open {
