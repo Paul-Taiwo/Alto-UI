@@ -2,24 +2,24 @@
 @font-face {
   font-family: nationale;
   font-display: fallback;
-  src: url(fonts/nationale-regular.eot);
-  src: url(fonts/nationale-regulard41d.eot?#iefix) format("embedded-opentype"), url(fonts/nationale-regular.woff2) format("woff2"), url(fonts/nationale-regular.woff) format("woff"), url(fonts/nationale-regular.otf) format("opentype")
+  src: url(../fonts/nationale-regular.eot);
+  src: url(../fonts/nationale-regulard41d.eot?#iefix) format("embedded-opentype"), url(../fonts/nationale-regular.woff2) format("woff2"), url(../fonts/nationale-regular.woff) format("woff"), url(../fonts/nationale-regular.otf) format("opentype")
 }
 
 @font-face {
   font-family: nationale;
   font-weight: 600;
   font-display: fallback;
-  src: url(fonts/nationale-demibold.eot);
-  src: url(fonts/nationale-demiboldd41d.eot?#iefix) format("embedded-opentype"), url(fonts/nationale-demibold.woff2) format("woff2"), url(fonts/nationale-demibold.woff) format("woff"), url(fonts/nationale-demibold.otf) format("opentype")
+  src: url(../fonts/nationale-demibold.eot);
+  src: url(../fonts/nationale-demiboldd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/nationale-demibold.woff2) format("woff2"), url(../fonts/nationale-demibold.woff) format("woff"), url(../fonts/nationale-demibold.otf) format("opentype")
 }
 
 @font-face {
   font-family: nationale;
   font-weight: 700;
   font-display: fallback;
-  src: url(fonts/nationale-bold.eot);
-  src: url(fonts/nationale-boldd41d.eot?#iefix) format("embedded-opentype"), url(fonts/nationale-bold.woff2) format("woff2"), url(fonts/nationale-bold.woff) format("woff"), url(fonts/nationale-bold.otf) format("opentype")
+  src: url(../fonts/nationale-bold.eot);
+  src: url(../fonts/nationale-boldd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/nationale-bold.woff2) format("woff2"), url(../fonts/nationale-bold.woff) format("woff"), url(../fonts/nationale-bold.otf) format("opentype")
 }
 
 html {
