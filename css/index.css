@@ -45,11 +45,11 @@ html {
 }
 
 ::-moz-selection {
-  background-color: #0ff
+  background-color: #3287c4
 }
 
 ::selection {
-  background-color: #0ff
+  background-color: #3287c4
 }
 
 blockquote,
@@ -548,6 +548,13 @@ blockquote {
   margin-right: auto;
   max-width: 1404px;
   width: 100%
+}
+
+.testbg {
+  background: linear-gradient(rgba(13, 13, 13, 1), rgba(13, 13, 13, 0.6), rgba(16, 16, 18, 1)),
+  url(../images/edward-cisneros-411006-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 @media (max-width:575px) {
@@ -2022,25 +2029,25 @@ blockquote {
 .btn-primary {
   color: #26282d;
   color: var(--ts-color-button-secondary, #26282d);
-  border-color: #0ff;
-  border-color: var(--ts-color-button-primary, #0ff)
+  border-color: #3287c4;
+  border-color: var(--ts-color-button-primary, #3287c4)
 }
 
 .btn-primary:before {
-  background-color: #0ff;
-  background-color: var(--ts-color-button-primary, #0ff)
+  background-color: #3287c4;
+  background-color: var(--ts-color-button-primary, #3287c4)
 }
 
 .btn-primary-outline {
-  color: #0ff;
-  color: var(--ts-color-button-primary, #0ff);
-  border-color: #0ff;
-  border-color: var(--ts-color-button-primary, #0ff)
+  color: #3287c4;
+  color: var(--ts-color-button-primary, #3287c4);
+  border-color: #3287c4;
+  border-color: var(--ts-color-button-primary, #3287c4)
 }
 
 .btn-primary-outline:before {
-  background-color: #0ff;
-  background-color: var(--ts-color-button-primary, #0ff);
+  background-color: #3287c4;
+  background-color: var(--ts-color-button-primary, #3287c4);
   opacity: 0
 }
 
@@ -2243,8 +2250,8 @@ blockquote {
 
 .btn-link:focus,
 .btn-link:hover {
-  color: #0ff;
-  color: var(--ts-color-button-primary, #0ff)
+  color: #3287c4;
+  color: var(--ts-color-button-primary, #3287c4)
 }
 
 .btn-link.disabled,
@@ -2437,7 +2444,7 @@ th {
 
 .theme-mint,
 [class*=theme-] .theme-mint {
-  background-color: #0ff;
+  background-color: #3287c4;
   color: #26282d
 }
 
@@ -4686,7 +4693,7 @@ th {
 
 .a-primary,
 .primary {
-  color: #0ff
+  color: #3287c4
 }
 
 .primary,
@@ -4707,7 +4714,7 @@ th {
 .a-primary-hover:hover,
 .primary-hover:focus,
 .primary-hover:hover {
-  color: #0ff;
+  color: #3287c4;
   opacity: 1
 }
 
@@ -5340,7 +5347,7 @@ option:selected {
 .form-input:focus,
 .form-search:focus,
 .form-textarea:focus {
-  border-color: #0ff
+  border-color: #3287c4
 }
 
 .form-input,
@@ -5472,8 +5479,8 @@ textarea.success {
 }
 
 .form-input-wrapper input:checked~.form-custom-input {
-  background: #0ff;
-  border-color: #0ff
+  background: #3287c4;
+  border-color: #3287c4
 }
 
 .form-input-wrapper input:checked~.form-custom-input:after {
@@ -5596,7 +5603,7 @@ textarea.success {
 }
 
 .form-select:focus~.form-custom-line {
-  border-color: #0ff
+  border-color: #3287c4
 }
 
 .form-select:disabled {
@@ -6001,8 +6008,8 @@ textarea.success {
 .btn-success--active.btn-primary {
   color: #26282d;
   color: var(--ts-color-button-secondary, #26282d);
-  background-color: #0ff;
-  background-color: var(--ts-color-button-primary, #0ff)
+  background-color: #3287c4;
+  background-color: var(--ts-color-button-primary, #3287c4)
 }
 
 .alto-dropdown {
@@ -6197,7 +6204,7 @@ textarea.success {
   width: 0;
   opacity: 1;
   transition: width .1s, opacity .4s;
-  background-color: #0ff;
+  background-color: #3287c4;
   z-index: 999999
 }
 

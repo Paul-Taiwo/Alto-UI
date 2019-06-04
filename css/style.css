@@ -715,6 +715,15 @@ span.nav_text {
 	background-size: cover;
 }
 
+.ms_sidemenu_wrapper.open_menu.dark {
+width: 204px;
+background: linear-gradient(rgba(13, 13, 13, 0.93), rgba(13, 13, 13, 0.83)),
+url("../images/edward-cisneros-411006-unsplash.jpg");
+height: 100%;
+background-position: center;
+background-size: cover;
+}
+
 .ms_logo_open {
 	display: none;
 }
@@ -949,6 +958,9 @@ ul.ms_lang_box:after {
 	/* height: 60.6vh; */
 }
 
+.ms-banner.dark {
+	background-color: #0D0D0F
+}
 .ms_banner_img {
 	text-align: center;
 	max-width: 511px;
@@ -1098,6 +1110,10 @@ ul.ms_lang_box:after {
 
 .ms_rcnt_box_text h3 a, .w_top_song .w_tp_song_name h3 a {
 	color: #202020;
+}
+
+.ms_rcnt_box_text.dark h3 a, .w_top_song .w_tp_song_name h3 a {
+	color: #ffffff;
 }
 
 .ms_rcnt_box_text p, .w_top_song .w_tp_song_name p {
@@ -2112,6 +2128,22 @@ h1.footer_title:after {
 
 .ms_player_wrapper {
 	background-image: url(../images/player_bg.jpg);
+	background-size: cover;
+	position: fixed;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	z-index: 10000;
+	box-shadow: 0px 0px 24px 6px rgba(4, 4, 4, 0.2);
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+}
+
+.ms_player_wrapper.dark {
+	background-image:linear-gradient(rgba(13, 13, 13, 1), rgba(13, 13, 13, 0.6)), url(../images/player_bg.jpg);
 	background-size: cover;
 	position: fixed;
 	bottom: 0px;
@@ -6153,6 +6185,7 @@ h2.widget-title:after {
 		margin-left: 0px;
 	}
 	.ms_sidemenu_wrapper {
+		display: none;
 		width: 250px;
 		left: -250px;
 		transition: all 0.5s ease-in-out;
