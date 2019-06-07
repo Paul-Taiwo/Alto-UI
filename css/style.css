@@ -5224,6 +5224,12 @@ h2.widget-title:after {
 	}
 }
 
+@media (min-width: 2000px) {
+	.ms_top_search {
+		margin-left: 128px;
+	}
+}
+
 @media(min-width:1400px) and (max-width:1800px) {
 	ul.more_option {
 		max-width: 135px;
@@ -5434,7 +5440,7 @@ h2.widget-title:after {
 	}
 	.ms_weekly_box {
 		padding: 20px 0px 20px 0px;
-		border-bottom: 1px solid #252b4d;
+		/* border-bottom: 1px solid #252b4d; */
 	}
 	.ms_weekly_inner .ms_divider {
 		display: none;
@@ -5482,11 +5488,11 @@ h2.widget-title:after {
 		/* margin-left: 140px; */
 		margin-right: 60px;
 	}
-	.ms_weekly_wrapper .col-lg-4.col-md-12 {
+	/* .ms_weekly_wrapper .col-lg-4.col-md-12 {
 		padding-right: 20px;
 		flex: 0 0 100%;
 		max-width: 100%;
-	}
+	} */
 	.ms_releases_wrapper .slider_nav_prev, .ms_releases_wrapper .slider_nav_next {
 		right: 0px;
 	}
@@ -5638,7 +5644,7 @@ h2.widget-title:after {
 	}
 	.ms_weekly_box {
 		padding: 25px 0px 20px 0px;
-		border-bottom: 1px solid #ededed;
+		/* border-bottom: 1px solid #ededed; */
 	}
 	.ms_weekly_inner .ms_divider {
 		display: none;
