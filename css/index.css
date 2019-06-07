@@ -6342,6 +6342,8 @@ textarea.success {
   .playlists-wrapper[data-v-585cf04c] {
     background: linear-gradient(rgba(13, 13, 13, 1), rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 1)),
     url(../images/alto-sel-bg.jpg);
+    background-size: contain;
+    background-position: center;
   }
 }
 
