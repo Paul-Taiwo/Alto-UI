@@ -584,7 +584,7 @@ blockquote {
   transform: translateX(-50%)
 }
 
-/*
+
   [class*=col-] {
   	float: left;
   	margin-bottom: 1.5rem;
@@ -597,7 +597,7 @@ blockquote {
 
   [class*=col-] .row:last-child {
   	margin-bottom: -1.5rem
-  } */
+  }
 
 @media (min-width:992px) {
   .col-align-right {
